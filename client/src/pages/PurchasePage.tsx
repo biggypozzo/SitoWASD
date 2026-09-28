@@ -3,7 +3,9 @@ import { useState } from "react";
 import { Link, useLocation, useRoute } from "wouter";
 import { useTheme } from "@/contexts/ThemeContext";
 import { products } from "./Home";
-import { DiscordIcon, DISCORD_URL } from "@/components/SocialLinks";
+import { DiscordIcon } from "@/components/SocialLinks";
+
+const PURCHASE_DISCORD_URL = "https://discord.gg/HrZnyd7E57";
 
 export default function PurchasePage() {
   const [, params] = useRoute("/purchase/:id");
@@ -60,7 +62,7 @@ export default function PurchasePage() {
           </article>
           <article className="purchase-step">
             <div className="purchase-step-heading"><b>2</b><div><h2>Send it in a ticket</h2><p>Open the Discord server and paste the copied request into a new ticket.</p></div></div>
-            <a className="purchase-discord" href={DISCORD_URL} target="_blank" rel="noreferrer"><DiscordIcon /><span>Open the Discord server</span><ExternalLink size={15} /></a>
+            <a className="purchase-discord" href={PURCHASE_DISCORD_URL} target="_blank" rel="noreferrer"><DiscordIcon /><span>Open the Discord server</span><ExternalLink size={15} /></a>
           </article>
         </section>
         <p className="purchase-note">After payment is confirmed, WASD will verify the transfer and continue your order. Keep your payment receipt until the handoff is complete.</p>

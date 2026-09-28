@@ -7,6 +7,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import ProductPage from "./pages/ProductPage";
+import FeedbackPage from "./pages/FeedbackPage";
 import PurchasePage from "./pages/PurchasePage";
 import ShowcasePage from "./pages/ShowcasePage";
 import CookieConsent from "./components/CookieConsent";
@@ -46,7 +47,7 @@ function ScrollToTop() {
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
-  return <Switch><Route path="/" component={Home} /><Route path="/showcase" component={ShowcasePage} /><Route path="/product/:id" component={ProductPage} /><Route path="/purchase/:id" component={PurchasePage} /><Route path="/cookie-policy" component={CookiePolicyPage} /><Route path="/privacy-policy" component={PrivacyPolicyPage} /><Route path="/404" component={NotFound} /><Route component={NotFound} /></Switch>;
+  return <Switch><Route path="/" component={Home} /><Route path="/showcase" component={ShowcasePage} /><Route path="/product/:id" component={ProductPage} /><Route path="/purchase/:id" component={PurchasePage} /><Route path="/feedback" component={FeedbackPage} /><Route path="/cookie-policy" component={CookiePolicyPage} /><Route path="/privacy-policy" component={PrivacyPolicyPage} /><Route path="/404" component={NotFound} /><Route component={NotFound} /></Switch>;
 }
 
 export default function App() {

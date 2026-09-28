@@ -233,6 +233,8 @@ html:not(.dark) .showcase-image::after { background: linear-gradient(to top, rgb
 html:not(.dark) .showcase-index, html:not(.dark) .showcase-open { color: rgba(255,255,255,.86); }
 html:not(.dark) .showcase-footer { background: #f1eee8; }
 html:not(.dark) .wordmark img { filter: none; }
+html:not(.dark) .designer-watermark { color: #161616; }
+html:not(.dark) .designer-watermark img { filter: none; }
 html:not(.dark) .site-header { background: rgba(241,238,232,.94); box-shadow: 0 1px 0 rgba(22,22,22,.12); }
 html:not(.dark) .site-header::after { display: none; }
 html:not(.dark) .desktop-nav a, html:not(.dark) .text-link, html:not(.dark) .header-store, html:not(.dark) .cart-button { color: #252525; }

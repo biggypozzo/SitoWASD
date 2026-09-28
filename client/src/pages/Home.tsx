@@ -264,7 +264,7 @@ function Hero() {
         <div className="hero-radial" />
         <motion.div className="hero-content" style={{ y: copyY, opacity: fade }}>
           <p className="eyebrow hero-eyebrow"><span /> WASD — EST. FOR CONTROL</p>
-          <a className="hero-title-link" href="#collection" aria-label="Scroll to the product collection" onClick={(event) => { event.preventDefault(); document.getElementById("collection")?.scrollIntoView({ behavior: "smooth", block: "start" }); }}><h1><span>THE SCIEN<span className="hero-ce">CE</span></span><em>OF</em><span>CONTROL</span></h1></a>
+          <a className="hero-title-link" href="#collection" aria-label="Scroll to the product collection" onClick={(event) => { event.preventDefault(); document.getElementById("collection")?.scrollIntoView({ behavior: "smooth", block: "start" }); }}><h1><span>THE ART</span><em>OF</em><span>CONTROL</span></h1></a>
           <p className="hero-deck">A precision surface made for the space between instinct and intent.</p>
         </motion.div>
         <motion.div className="hero-pad-wrap" style={{ scale: padScale, y: padY, rotate: padRotate }}>
@@ -366,13 +366,14 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-orbit" />
-      <div className="footer-top"><p className="eyebrow"><span /> READY WHEN YOU ARE</p><Link href="#collection" className="round-cta footer-cta" aria-label="Explore the WASD collection"><ArrowDownRight size={20} /></Link></div>
+      <div className="footer-top"><p className="eyebrow"><span /> READY WHEN YOU ARE</p></div>
       <h2>MAKE<br /><em>YOUR</em><br />MOVE.</h2>
       <div className="footer-bottom">
         <Wordmark />
         <div className="footer-links"><a href="#control">Control</a><a href="#specs">Specifications</a><a href="#collection">Collection</a></div>
         <div className="footer-legal"><span>© 2026 WASD</span><Link href="/cookie-policy">Cookie Policy</Link><Link href="/privacy-policy">Privacy Policy</Link><button type="button" onClick={openCookiePreferences}>Gestisci cookie</button></div>
       </div>
+      <a className="designer-watermark" href="https://www.instagram.com/daniele.pozzolii/" target="_blank" rel="noreferrer" aria-label="Open Designed by Denn Instagram profile"><img src="/assets/MYlogo.png" alt="" /><span>Designed by Denn</span></a>
       <div className="feedback-form">
         <div><span className="feedback-label">CONTACT / FEEDBACK</span><h3>Tell us what<br /><em>you feel.</em></h3></div>
         <p className="feedback-prompt">Share your experience with the WASD surface.</p>

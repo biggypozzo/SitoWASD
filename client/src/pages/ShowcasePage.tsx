@@ -80,7 +80,7 @@ export default function ShowcasePage() {
       </motion.section>
 
       <footer className="showcase-footer">
-        <Link className="showcase-footer-link" href="/"><ArrowLeft size={17} /> BACK TO THE SCIENCE OF CONTROL</Link>
+        <Link className="showcase-footer-link" href="/"><ArrowLeft size={17} /> BACK TO THE ART OF CONTROL</Link>
         <span>© 2026 WASD / BUILT FOR CONTROL.</span>
       </footer>
     </main>
