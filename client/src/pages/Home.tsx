@@ -40,7 +40,6 @@ export const products: Product[] = [
     name: "WASD Mousepad – Devil Rose Edition",
     price: "€60",
     was: "€70",
-    status: "Sold out",
     image: "https://imgproxy.fourthwall.dev/kyo2Cp8xNDJCrOcQ2u7G6S1v0DaWm7eHGwrFoec7ms0/w:720/sm:1/enc/miadf7S1JfEjlCGk/_XVRWpT-9tMbcqnZ/uuqjxHGy7Dn8e5d3/pRjiJRefTgDavWnG/v0qJ0A2Djno6p7fa/QIq0a0oRd4J5Nmfc/chwIMyJXjm2wMuHP/lRj2GW48MUhuCNUo/62llgHIBrEdaOdUj/4AyzYtx8t7BlOUwW/v4r1nE9eFD5o7npp/a8Fzgg9GHI74V9ww/iFBjy7NZxDusdd_e/YAL3Mg.webp",
     url: `${STORE}/products/wasd-mousepad-devil-rose-edition`,
     accent: "#ea3d62",
@@ -52,7 +51,6 @@ export const products: Product[] = [
     name: "WASD Mousepad – Chroma Jade Edition",
     price: "€60",
     was: "€70",
-    status: "Sold out",
     image: "https://imgproxy.fourthwall.dev/fKyBlCg-zUKWm-IMCYZQN_mHyTMKA-Leg7x1pUkD3qI/w:720/sm:1/enc/0dL1u9JcH_14M6EQ/Xgdu0ahXO8CmtT1X/RBAvnVxr2kl7DFpD/Y1XC0fW3YoKcsJgz/FfZVjDBd6xh0COU1/IBK4C9MgNbfReTcX/BHW8WNBhSlpp0-I8/nSUVQ2NclUlL6s-F/65Pq0ENZYzl79vVS/_iQNM-T4ywHvdlw0/BCJbbvc0Q5UrxRdQ/umqC3Ok8tUgPj8hA/-29T9xARu1s0uq_c/_WENMw.jpg",
     url: `${STORE}/products/wasd-mousepad-chroma-jade-edition-3`,
     accent: "#44c69c",
@@ -64,7 +62,6 @@ export const products: Product[] = [
     name: "WASD Mousepad – Onyx Eclipse Edition",
     price: "€60",
     was: "€70",
-    status: "Sold out",
     image: "https://imgproxy.fourthwall.dev/JOVXHV_4JiCFA7d8mLdmIeEOJxb_yOZ9Ns2Y6CTTSzM/w:720/sm:1/enc/ZmGq8YEs8H18k7-y/OmgPLVnwECjyBJbt/5-TjfW7Z5D78W1M7/9YvuRtxyzfoSFq_u/S9TrtPER_b8NO0mo/FqyZLDCPM0-mPzPq/lqVbe3-F8avYbn7U/DLLosG1vuLAVEJ35/k-aHsMA8Q6Wx8m4l/S8cvz8QIWPI95zZH/stcp3jAdajbnwHhN/qH773qfquuG9e042/QiapLStnW2zJrG_8/-Yq0QA.webp",
     url: `${STORE}/products/wasd-mousepad-onyx-eclipse-edition`,
     accent: "#8590a1",
@@ -352,7 +349,7 @@ function Collection() {
           <AnimatePresence mode="wait"><ProductStage product={selected} key={selected.id} /></AnimatePresence>
           <div className="stage-meta">
             <div><span>SELECTED EDITION</span><strong>{selected.name}</strong></div>
-            <div className="stage-price">{selected.price && <>{selected.was && <del>{selected.was}</del>}<strong>{selected.price}</strong></>}{selected.status && <small>{selected.status}</small>}</div>
+            <div className="stage-price">{selected.price && <>{selected.was && <del>{selected.was}</del>}<strong>{selected.price}</strong></>}</div>
             <Link className="underlined-link" href={`/product/${selected.id}`}>View product details <ArrowUpRight size={15} /></Link>
           </div>
           <Link className="collection-showcase-link" href="/showcase">Explore full collection <ArrowUpRight size={15} /></Link>
